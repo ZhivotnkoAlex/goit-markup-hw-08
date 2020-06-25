@@ -1,0 +1,120 @@
+/* Footer */
+
+.footer {
+    background-color: $footer-background-color;
+    padding-top: 48px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 28px;
+    }
+    
+
+}
+
+
+
+/* Address */
+
+.address {
+    color: $main-color-invert;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    &__local {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 9px;
+    }
+    
+&__mail {
+        display: block;
+        margin-bottom: 9px;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+&__tel {
+        display: block;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    
+
+}
+
+
+
+/* Invitation */
+
+.invitation {
+    width: 206px;
+    &__title {
+        color: $third-turn-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+    
+&__networks {
+        list-style: none;
+    }
+    
+
+}
+
+
+
+/* Submit */
+
+.submit {
+    color: $third-turn-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 21px;
+    &__list {
+        display: flex;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.6);
+        list-style: none;
+        padding: 0;
+        align-items: center;
+    }
+    
+&__item {
+        margin-right: 12px;
+    }
+    
+&__mail {
+        font-size: 16px;
+        background-color: inherit;
+        color: inherit;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        width: 358px;
+        padding: 15px 12px;
+        letter-spacing: 0.03em;
+        border-radius: 4px;
+    }
+    
+&__button {
+        min-width: 200px;
+        display: flex;
+        padding-right: 28px;
+        padding-left: 28px;
+        justify-content: space-between;
+    }
+    
+&__icon {
+        fill: #ffffff;
+    }
+    
+
+}
