@@ -1,10 +1,14 @@
      /* Specialization section */
      
      .specialization {
-         padding-top: 94px;
-         padding-bottom: 94px;
+         //  padding-top: 94px;
+         //  padding-bottom: 94px;
          z-index: 2;
-         &__title {
+         @media screen and (min-width: 480px) {
+             display: none;
+         }
+         
+&__title {
              font-weight: 700;
              font-size: 36px;
              line-height: 1.17;
@@ -17,13 +21,13 @@
              margin-top: 0;
              margin-bottom: 0;
              padding-left: 0;
-             display: flex;
-             justify-content: space-between;
+             //  display: flex;
+             //  justify-content: space-between;
              list-style: none;
          }
          
 &__list-item {
-             width: calc((100% - 60px) / 3);
+             //  width: calc((100% - 60px) / 3);
              position: relative;
          }
          

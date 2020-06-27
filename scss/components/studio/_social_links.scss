@@ -3,9 +3,13 @@
     display: flex;
     padding: 0;
     justify-content: space-between;
-    margin-right: 32px;
-    margin-left: 32px;
-    &__footer {
+    @media screen and (min-width: 480px) {
+        margin-right: 122px;
+        margin-left: 122px;
+        margin-bottom: 24px;
+    }
+    
+&__footer {
         list-style: none;
         display: flex;
         padding: 0;
@@ -18,17 +22,15 @@
         justify-content: center;
         width: 44px;
         height: 44px;
-        border-radius: 50%;
+        // border-radius: 50%;
         fill: $secondary-logo-color;
-        transition: background-color $transition, fill $transition;
-        &:hover,
-        &:focus {
-            background-color: $button-background;
-            fill: $button-color;
-            cursor: pointer;
-        }
-        
-
+        // transition: background-color $transition, fill $transition;
+        // &:hover,
+        // &:focus {
+        //     background-color: $button-background;
+        //     fill: $button-color;
+        //     cursor: pointer;
+        // }
     }
     
 &__link--dark {

@@ -26,8 +26,8 @@
     transform: translate(-50%, -50%);
     padding: 40px;
     position: absolute;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -42,14 +42,14 @@
     }
     
 &__term {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: $secondary-color;
         margin-bottom: 30px;
-        justify-content: center;
+        // justify-content: center;
         &--link {
             display: inline-block;
             color: $accent-primary-color;
@@ -67,8 +67,8 @@
         color: $secondary-color;
         top: 0;
         left: 0;
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         transition: transform $transition;
         .form__textarea:focus-within+&,
         .form__textarea:not(:placeholder-shown)+& {
@@ -158,8 +158,8 @@
     }
     
 &__close {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
         position: absolute;
         top: 0;
         right: 0;

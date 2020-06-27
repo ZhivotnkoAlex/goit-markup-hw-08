@@ -1,51 +1,69 @@
-/* Clients */
-
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    &__list {
-        display: inline-flex;
-        margin: 0;
-        list-style: none;
-        padding: 0;
-    }
+    /* Clients */
     
+    .clients {
+        @media screen and (min-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        
+&__list {
+            display: inline-flex;
+            flex-wrap: wrap;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        
 &__item {
-        margin-right: 30px;
-    }
-    
+            margin-right: 30px;
+            @media screen and (min-width: 480px) {
+                width: calc((100% - 30px) / 2);
+                margin-bottom: 30px;
+            }
+            
+&:nth-child(2n) {
+                margin-right: 0;
+            }
+            
+&:nth-last-child(-n+2) {
+                margin-bottom: 0;
+            }
+            
+
+        }
+        
 &__item:last-child {
-        margin-right: 0;
-    }
-    
+            margin-right: 0;
+        }
+        
 &__link {
-        display: flex;
-        border: 1px solid $secondary-logo-color;
-        border-radius: 4px;
-        width: 170px;
-        height: 90px;
-        justify-content: center;
-        align-items: center;
-        fill: $secondary-logo-color;
-        transition: fill $transition;
-        &:hover,
-        &:focus {
-            fill: $accent-primary-color;
-            border: 1px solid $accent-primary-color;
-            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $secondary-logo-color;
+            border-radius: 4px;
+            // width: 170px;
+            height: 90px;
+            fill: $secondary-logo-color;
+            transition: fill $transition;
+            &:hover,
+            &:focus {
+                fill: $accent-primary-color;
+                border: 1px solid $accent-primary-color;
+                cursor: pointer;
+            }
+            
+
+        }
+        
+&__title {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 50px;
         }
         
 
     }
-    
-&__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-    
-
-}

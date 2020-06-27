@@ -1,10 +1,13 @@
 /* Team section  */
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: $secondary-background-color;
-    &__title {
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
+&__title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -14,8 +17,8 @@
     }
     
 &__list {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
         padding-left: 0;
         margin: 0;
         list-style: none;
@@ -29,7 +32,7 @@
 /* Card list */
 
 .card {
-    width: calc((100% - 90px) / 4);
+    // width: calc((100% - 90px) / 4);
     background-color: $main-background-color;
     padding-bottom: 24px;
     border-radius: 4px;
