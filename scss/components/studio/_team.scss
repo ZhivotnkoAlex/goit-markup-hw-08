@@ -2,12 +2,11 @@
 
 .team {
     background-color: $secondary-background-color;
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    
-&__title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    @media screen and (min-width: 480px) {}
+    &__title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;

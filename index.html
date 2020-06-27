@@ -17,8 +17,8 @@
             <div class="header__wrap">
                 <nav class="site-nav">
                     <a href=" ./index.html " class="logo logo__header "> <span class="logo--blue ">Web</span> Studio</a>
-                    <div class="site-nav__menu ">
-                        <ul class="site-nav__list header_site-nav ">
+                    <div class="menu-container" id="menu-container" data-menu>
+                        <ul class="site-nav__list ">
                             <li class="site-nav__item ">
                                 <a class="site-nav__link site-nav__link--current " href=./index.html>Студия</a>
                             </li>
@@ -58,7 +58,7 @@
         <section class="hero ">
             <div class="container ">
                 <H1 class="hero-title ">эффективные решения для вашего бизнеса</H1>
-                <button data-open-modal class="button button--center ">Заказать услугу</button>
+                <button data-modal-open class="button button--center ">Заказать услугу</button>
             </div>
         </section>
 
@@ -66,7 +66,7 @@
         <div class="backdrop backdrop__hidden " data-backdrop>
 
             <form class="form " action=" " autocomplete="off ">
-                <button type="button " class="form__close " data-close-modal>
+                <button type="button " class="form__close " data-modal-close>
                     <svg class="form__cross" width=40 height=40>
                             <use href="./images/symbol-defs.svg#icon-form-close" ></use>
                         </svg>
@@ -189,7 +189,7 @@
                 <h2 class="team__title ">Наша команда</h2>
                 <ul class="team__list ">
                     <li class="card ">
-                        <img class="card__img " src="./images/nickolay.jpg " width=270 alt="джон смит ">
+                        <img class="card__img" srcset="./images/mob_nickolay.jpg x1, ./images/mob_nickolay@2x.jpg x2" src="./images/mob_nickolay.jpg " alt="Николай Кучеренко">
                         <h4 class="card__name ">Николай Кучеренко</h4>
                         <p class="card__profession ">Product Designer</p>
                         <ul class="social-network ">
@@ -390,7 +390,7 @@
                 <div class="footer__contacts ">
                     <a href="./index.html " class="logo--blue logo__footer "> Web <span class="logo--invert ">Studio</span></a>
                     <address class="address ">
-                      <p class="address__local "> г. Киев, пр-т Леси Украинки, 26</p>
+                      <p class="address__local"> г. Киев, пр-т Леси Украинки, 26</p>
                       <a href="mailto:info@example.com " class="address__mail ">info@example.com</a>
                       <a href="tel:380961111111 " class="address__tel ">+38 096 111 11 11</a>
                     </address>
@@ -401,7 +401,7 @@
                     <b class="invitation__title ">присоединяйтесь</b>
                     <ul class="social-network__footer ">
                         <li>
-                            <a href="https://www.instagram.com/ " class="social-network__link social-network__link--dark " aria-label="Инстаграм ">
+                            <a href="https://www.instagram.com/ " class="social-network__link social-network__link--dark  " aria-label="Инстаграм ">
                                 <svg width=20 height=20>
                                         <use href="./images/symbol-defs.svg#icon-instagram "  ></use>
                                     </svg>

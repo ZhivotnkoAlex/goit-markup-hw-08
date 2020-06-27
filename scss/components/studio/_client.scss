@@ -1,13 +1,10 @@
     /* Clients */
     
     .clients {
-        @media screen and (min-width: 480px) {
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-        
-&__list {
-            display: inline-flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__list {
+            display: flex;
             flex-wrap: wrap;
             margin: 0;
             list-style: none;
@@ -16,12 +13,9 @@
         
 &__item {
             margin-right: 30px;
-            @media screen and (min-width: 480px) {
-                width: calc((100% - 30px) / 2);
-                margin-bottom: 30px;
-            }
-            
-&:nth-child(2n) {
+            width: calc((100% - 30px) / 2);
+            margin-bottom: 30px;
+            &:nth-child(2n) {
                 margin-right: 0;
             }
             
@@ -29,7 +23,7 @@
                 margin-bottom: 0;
             }
             
-
+@media screen and (min-width: 480px) {}
         }
         
 &__item:last-child {
