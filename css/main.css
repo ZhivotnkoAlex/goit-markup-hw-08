@@ -304,11 +304,9 @@
 }
 
 /* Valeus section */
-@media screen and (min-width: 480px) {
-  .values {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.values {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .values .values__item {
@@ -416,11 +414,11 @@
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team__list {
@@ -432,17 +430,20 @@
 /* Card list */
 .card {
   background-color: #ffffff;
-  padding-bottom: 24px;
+  margin-bottom: 30px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+.card:last-child {
+  margin-bottom: 0;
+}
+
 .card__img {
   display: block;
   margin-bottom: 30px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  width: 100%;
 }
 
 .card__profession {
@@ -472,7 +473,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .social-network__footer {
@@ -572,11 +573,11 @@
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 /* Footer */
@@ -715,10 +716,17 @@
           transform: translate(-50%, -50%);
   padding: 40px;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
+  min-width: 90%;
 }
 
 .form__title {
@@ -731,17 +739,31 @@
 }
 
 .form__term {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form__term--link {
   display: inline-block;
   color: #2196F3;
-  margin-left: 4px;
+}
+
+.form__agreements {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 
 .form__label {
@@ -752,6 +774,12 @@
   color: #757575;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -847,6 +875,12 @@
 }
 
 .form__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -876,14 +910,14 @@
 }
 
 .checkbox__icon {
-  display: block;
+  display: inline-block;
   width: 15px;
   height: 15px;
   border: 1px solid #000000;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
-  margin-right: 8px;
+  margin: 0;
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
