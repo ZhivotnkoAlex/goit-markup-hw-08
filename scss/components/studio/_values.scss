@@ -3,11 +3,30 @@
 .values {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 480px) {}
     // border-bottom: 1px solid #ECECEC;
     .values__item {
         // width: 278px;
         list-style: none;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px) / 2);
+            margin-right: 30px;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            
+&:nth-last-child(-n+2) {
+                margin-bottom: 0;
+            }
+            
+&:nth-child(2n) {
+                margin-right: 0;
+            }
+            
+
+        }
+        
+
     }
     
 &__background {
@@ -47,10 +66,12 @@
         // justify-content: space-between;
         padding: 0;
         margin: 0;
-    }
-    
-&__item:last-child {
-        margin-right: 0;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+
     }
     
 

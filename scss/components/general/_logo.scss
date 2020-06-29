@@ -7,9 +7,16 @@
     @include logo($main-color);
     @extend .logo__font;
     text-decoration: none;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    &__font {
+    // padding-top: 16px;
+    // padding-bottom: 16px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-right: 81px;
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+    
+&__font {
         font-family: Raleway;
         font-weight: 700;
         font-size: 24px;

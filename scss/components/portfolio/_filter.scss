@@ -15,7 +15,7 @@
 
 .portfolio {
     border-top: 1px solid #ECECEC;
-    padding-top: 93px;
+    padding-top: 60px;
 }
 
 
@@ -24,17 +24,24 @@
 
 .filter {
     display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     margin: 0;
-    justify-content: center;
+    // justify-content: center;
     list-style: none;
-    .filter__item {
+    &__item {
         margin-right: 8px;
-    }
-    
-&__item:last-child {
-        margin-right: 0;
+        margin-bottom: 15px;
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+        
+&:last-child {
+            margin-right: 0;
+        }
+        
+
     }
     
 &__button {

@@ -24,15 +24,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
     position: absolute;
     display: flex;
     flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-width: 90%;
-    &__title {
+    padding: 15px;
+    @media screen and (max-width: 479px) {
+        min-width: 95%;
+    }
+    
+min-width: 450px;
+    @media screen and (min-width: 480px) {
+        max-width: 450px;
+    }
+    
+&__title {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.15;
@@ -50,6 +58,7 @@
         color: $secondary-color;
         margin-bottom: 30px;
         justify-content: center;
+        max-width: 370px;
         &--link {
             display: inline-block;
             color: $accent-primary-color;
@@ -59,9 +68,7 @@
     }
     
 &__agreements {
-        display: inline-block;
-        text-align: center;
-        width: 100%;
+        padding-left: 8px;
     }
     
 &__label {
@@ -183,34 +190,32 @@
 
     }
     
-
-}
-
-
 .checkbox {
-    margin-right: 9px;
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    &__icon {
-        display: inline-block;
-        width: 15px;
-        height: 15px;
-        border: 1px solid #000000;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 2px;
-        margin: 0;
-        transition: border-color $transition;
-    }
-    
+        margin-right: 9px;
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        &__icon {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 2px;
+            margin: 0;
+            transition: border-color $transition;
+        }
+        
 &:checked+&__icon {
-        background-color: $accent-primary-color;
-        background-image: url(../images/icon-check.svg);
-        background-size: contain;
-        background-origin: border-box;
-        border-color: $accent-primary-color;
+            background-color: $accent-primary-color;
+            background-image: url(../images/icon-check.svg);
+            background-size: contain;
+            background-origin: border-box;
+            border-color: $accent-primary-color;
+        }
+        
+
     }
     
 
