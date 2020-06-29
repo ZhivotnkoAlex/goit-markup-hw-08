@@ -23,7 +23,7 @@
                                 <a class="site-nav__link site-nav__link--current " href=./index.html>Студия</a>
                             </li>
                             <li class="site-nav__item ">
-                                <a class="site-nav__link " href="./portfolio.html ">Портфолио</a>
+                                <a class="site-nav__link " href="./portfolio.html">Портфолио</a>
                             </li>
                             <li class="site-nav__item ">
                                 <a class="site-nav__link " href=" ">Контакты</a>
@@ -62,59 +62,6 @@
             </div>
         </section>
 
-        <!--Форма заказа-->
-        <div class="backdrop backdrop__hidden " data-backdrop>
-
-            <form class="form " action=" " autocomplete="off ">
-                <button type="button " class="form__close " data-close-modal>
-                    <svg class="form__cross" width=40 height=40>
-                            <use href="./images/symbol-defs.svg#icon-form-close" ></use>
-                        </svg>
-                </button>
-                <span class=form__title>Оставьте свои данные, мы вам перезвоним</span>
-                <div class="form__wraper ">
-                    <input class="form__input " type="text " name="customer " placeholder=" ">
-                    <label class="form__label "> 
-                        <svg class="form__icon " width=20 height=20>
-                                <use href="./images/symbol-defs.svg#icon-form-person " ></use>
-                        </svg>
-                            <span class="form__descr ">Имя</span>
-                    </label >
-                </div>
-                <div class="form__wraper ">
-                    <input class="form__input " type="tel " name="tel " placeholder=" ">
-                    <label class="form__label ">
-                        <svg class="form__icon " width=20 height=20>
-                                <use href="./images/symbol-defs.svg#icon-form-phone " ></use>
-                        </svg>
-                        <span class="form__descr ">Телефон</span> 
-                    </label>
-                </div>
-                <div class="form__wraper ">
-                    <input class="form__input " type="email " name="e-mail " placeholder=" ">
-                    <label class="form__label ">
-                        <svg class="form__icon " width=20 height=20>
-                            <use href="./images/symbol-defs.svg#icon-form-email " ></use>
-                        </svg>
-                        <span class="form__descr "> Почта</span>
-                    </label>
-                </div>
-                <div class="form__wraper ">
-                    <textarea class="form__textarea " name="comment " id="comment " rows="10 " placeholder=" "></textarea>
-                    <label class="form__label ">
-                        <span class="form__comment "> Комментарий</span>
-                    </label>
-
-                </div>
-                <label class="form__term ">
-                        <input class="checkbox" type="checkbox"  name="term ">
-                        <span class="checkbox__icon "></span> <span class="form__agreements">Соглашаюсь с рассылкой и принимаю  <a class="form__term--link " href=" "> Условия договора</a> </span>
-                </label>
-
-                <button class="button button--center " type="submit ">Отправить</button>
-
-            </form>
-        </div>
 
 
 
@@ -466,6 +413,59 @@
             </div>
         </div>
     </footer>
+    <!--Форма заказа-->
+    <div class="backdrop backdrop__hidden " data-backdrop>
+
+        <form class="form " action=" " autocomplete="off ">
+            <button type="button " class="form__close " data-close-modal>
+                    <svg class="form__cross" width=40 height=40>
+                            <use href="./images/symbol-defs.svg#icon-form-close" ></use>
+                        </svg>
+                </button>
+            <span class=form__title>Оставьте свои данные, мы вам перезвоним</span>
+            <div class="form__wraper ">
+                <input class="form__input " type="text " name="customer " placeholder=" ">
+                <label class="form__label "> 
+                        <svg class="form__icon " width=20 height=20>
+                                <use href="./images/symbol-defs.svg#icon-form-person " ></use>
+                        </svg>
+                            <span class="form__descr ">Имя</span>
+                    </label >
+                </div>
+                <div class="form__wraper ">
+                    <input class="form__input " type="tel " name="tel " placeholder=" ">
+                    <label class="form__label ">
+                        <svg class="form__icon " width=20 height=20>
+                                <use href="./images/symbol-defs.svg#icon-form-phone " ></use>
+                        </svg>
+                        <span class="form__descr ">Телефон</span> 
+                    </label>
+            </div>
+            <div class="form__wraper ">
+                <input class="form__input " type="email " name="e-mail " placeholder=" ">
+                <label class="form__label ">
+                        <svg class="form__icon " width=20 height=20>
+                            <use href="./images/symbol-defs.svg#icon-form-email " ></use>
+                        </svg>
+                        <span class="form__descr "> Почта</span>
+                    </label>
+            </div>
+            <div class="form__wraper ">
+                <textarea class="form__textarea " name="comment " id="comment " rows="10 " placeholder=" "></textarea>
+                <label class="form__label ">
+                        <span class="form__comment "> Комментарий</span>
+                    </label>
+
+            </div>
+            <label class="form__term ">
+                        <input class="checkbox" type="checkbox"  name="term ">
+                        <span class="checkbox__icon "></span> <span class="form__agreements">Соглашаюсь с рассылкой и принимаю  <a class="form__term--link " href=" "> Условия договора</a> </span>
+                </label>
+
+            <button class="button button--center " type="submit ">Отправить</button>
+
+        </form>
+    </div>
 
 
     <script src="./js/menu.js "></script>
