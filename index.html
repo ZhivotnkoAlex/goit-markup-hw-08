@@ -61,10 +61,6 @@
                 <button data-open-modal class="button button--center ">Заказать услугу</button>
             </div>
         </section>
-
-
-
-
         <!-- Описание ценностей -->
         <section class="values ">
             <div class="container ">
@@ -115,15 +111,24 @@
                 <h2 class="specialization__title ">Чем мы занимаемся</h2>
                 <ul class="specialization__list ">
                     <li class="specialization__list-item ">
-                        <a href=" "><img class="specialization__img " src="./images/box_1.png " width=370 alt="ноутбук "></a>
+                        <picture>
+                            <source srcset="./images/box_1.jpg 1x , ./images/box_1@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="specialization__img " src="./images/box_1.jpg " alt="Десктоп">
+                        </picture>
                         <p class="specialization__descr ">Десктопные приложения</p>
                     </li>
                     <li class="specialization__list-item ">
-                        <a href=" "><img class="specialization__img " src="./images/box_2.png " width=370 alt="телефон цветной "></a>
+                        <picture>
+                            <source srcset="./images/box_2.jpg 1x , ./images/box_2@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="specialization__img " src="./images/box_2.jpg " alt="Смартфон">
+                        </picture>
                         <p class="specialization__descr ">Мобильные приложения</p>
                     </li>
                     <li class="specialization__list-item ">
-                        <a href=" "><img class="specialization__img " src="./images/box_3.png " width=370 alt="монитор "></a>
+                        <picture>
+                            <source srcset="./images/box_3.jpg 1x , ./images/box_3@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="specialization__img " src="./images/box_3.jpg " alt="Монитор">
+                        </picture>
                         <p class="specialization__descr ">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -138,6 +143,7 @@
                         <picture>
                             <source srcset="./images/mob_nickolay.jpg 1x , ./images/mob_nickolay@2x.jpg 2x" media="(max-width: 767px)">
                             <source srcset="./images/tab_nickolay.jpg 1x , ./images/tab_nickolay@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/nickolay.jpg 1x , ./images/nickolay@2x.jpg 2x" media="(min-width: 1200px)">
                             <img class="card__img " src="./images/mob_nickolay.jpg " alt="Николай Кучеренко ">
                         </picture>
 
@@ -178,6 +184,7 @@
                         <picture>
                             <source srcset="./images/mob_olga.jpg 1x, ./images/mob_olga@2x.jpg 2x" media="(max-width:767px)">
                             <source srcset="./images/tab_olga.jpg 1x, ./images/tab_olga@2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./images/olga.jpg 1x, ./images/olga@2x.jpg 2x" media="(min-width:1200px)">
                             <img class="card__img " src="./images/mob_olga.jpg " alt="Ольга Иванова">
                         </picture>
                         <h4 class="card__name ">Ольга Иванова</h4>
@@ -217,6 +224,7 @@
                         <picture>
                             <source srcset="./images/mob_andrey.jpg 1x, ./images/mob_andrey@2x.jpg 2x" media="(max-width:767px)">
                             <source srcset="./images/tab_andrey.jpg 1x, ./images/tab_andrey@2x.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./images/andrey.jpg 1x, ./images/andrey@2x.jpg 2x" media="(min-width:1200px)">
                             <img class="card__img " src="./images/mob_andrey.jpg " alt="Андрей Шевченко">
                         </picture>
                         <h4 class="card__name ">Андрей Шевченко</h4>
@@ -256,6 +264,7 @@
                         <picture>
                             <source srcset="./images/mob_ivan.jpg 1x, ./images/mob_ivan@2x.jpg 2x" media="(max-width:767px)">
                             <source srcset="./images/tab_ivan.jpg 1x, ./images/tab_ivan@2x.jpg 2x" media="(min-width:76px)">
+                            <source srcset="./images/ivan.jpg 1x, ./images/ivan@2x.jpg 2x" media="(min-width:1200px)">
                             <img class="card__img " src="./images/mob_ivan.jpg " alt="Иван Николаев">
                         </picture>
                         <h4 class="card__name ">Иван Николаев</h4>
@@ -397,7 +406,7 @@
                 </div>
                 <!-- подписка -->
                 <div class="submit__wrap-tablet">
-                    <b class="submit "> подписаться на рассылку</b>
+                    <b class="submit "> подпишитесь на рассылку</b>
                     <form action=" " autocomplete="off ">
                         <ul class="submit__list ">
                             <li class="submit__item "><input type="email " placeholder="E-mail " class="submit__mail " name="user-email ">

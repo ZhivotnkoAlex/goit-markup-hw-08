@@ -3,9 +3,12 @@
 .values {
     padding-top: 60px;
     padding-bottom: 60px;
-    // border-bottom: 1px solid #ECECEC;
-    .values__item {
-        // width: 278px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
+.values__item {
         list-style: none;
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
@@ -26,6 +29,20 @@
 
         }
         
+@media screen and (min-width: 1200px) {
+            width: calc((100% - 90px) / 4);
+            margin-bottom: 0;
+            &:nth-child(2n) {
+                margin-right: 30px;
+            }
+            
+&:last-child {
+                margin-right: 0;
+            }
+            
+
+        }
+        
 
     }
     
@@ -35,20 +52,17 @@
         align-items: center;
         padding-top: 25px;
         padding-bottom: 25px;
-        // height: 120px;
         border-radius: 5px;
         background-color: $secondary-background-color;
         margin-bottom: 30px;
-        // margin-right: 0;
     }
     
 &__descr {
         color: $secondary-color;
-        // font-weight: normal;
         font-size: 14px;
         line-height: 1.71;
-        // margin-top: 0;
-        // margin-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
 &__title {
@@ -62,8 +76,6 @@
     }
     
 &__list {
-        // display: flex;
-        // justify-content: space-between;
         padding: 0;
         margin: 0;
         @media screen and (min-width: 768px) {

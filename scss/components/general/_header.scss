@@ -107,6 +107,7 @@
             font-size: 18px;
             line-height: 1.17;
             letter-spacing: 0.02em;
+            transition: color $transition;
             @media screen and (min-width: 768px) {
                 font-size: 12px;
                 padding: 0;
@@ -115,12 +116,22 @@
                     margin-bottom: 10px;
                 }
                 
+@media screen and (min-width: 1200px) {
+                    margin-bottom: 32px;
+                    margin-top: 32px;
+                    align-items: center;
+                    &:not(:last-child) {
+                        margin-bottom: 32px;
+                    }
+                    
+
+                }
+                
 
             }
             
 // padding-top: 32px;
             // padding-bottom: 32px;
-            // transition: color $transition;
             &__wraper {
                 display: flex;
                 flex-direction: column;
@@ -130,17 +141,24 @@
                     align-content: center;
                 }
                 
+@media screen and (min-width: 1200px) {
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                
 
             }
             
 &:hover,
             &:focus {
-                // color: $accent-primary-color;
-                // cursor: pointer;
+                color: $accent-primary-color;
+                cursor: pointer;
             }
             
 &:first-child {
-                // margin-right: 50px;
+                margin-right: 30px;
             }
             
 
@@ -212,7 +230,6 @@
                 flex-grow: 1;
                 justify-content: space-between;
                 padding: 0;
-                // align-content: center;
             }
             
 &.is-open {
