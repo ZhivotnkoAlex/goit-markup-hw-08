@@ -234,6 +234,9 @@
   .site-nav .contacts:not(:last-child) {
     margin-bottom: 0;
   }
+  .site-nav .contacts:first-child {
+    margin-right: 30px;
+  }
 }
 
 .site-nav .contacts__wraper {

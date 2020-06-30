@@ -137,15 +137,17 @@
                     margin-bottom: 0;
                 }
                 
+&:first-child {
+                    margin-right: 30px;
+                }
+                
 
             }
             
 
         }
         
-// padding-top: 32px;
-        // padding-bottom: 32px;
-        &__wraper {
+&__wraper {
             display: flex;
             flex-direction: column;
             justify-content: center;
