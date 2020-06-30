@@ -1537,6 +1537,9 @@
   line-height: 2;
   letter-spacing: 0.06em;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project-list__title--border {
