@@ -8,6 +8,7 @@
             overflow: hidden;
             transition: opacity $transition;
             overflow-y: scroll;
+            z-index: 10;
             &__hidden {
                 opacity: 0;
                 pointer-events: none;
