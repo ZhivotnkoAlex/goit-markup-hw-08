@@ -65,6 +65,12 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo__font, .logo, .logo--blue, .logo--invert {
+    font-size: 26px;
+  }
+}
+
 .logo__footer {
   display: block;
   margin-bottom: 20px;
@@ -380,8 +386,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 1600px;
   background-position: center;
   -webkit-box-pack: center;
@@ -392,6 +396,8 @@
           align-items: center;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 767px) {
